@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #4bd8d1e8
+}
+
+.barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style-type: none;
+    margin: 1rem 0rem 1rem;
+}
+
+.portada{
+    background-image: url(../images/fotobanner.jpg);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    height: 20vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #0a5a5a;
+    font-size: 1.8rem
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main__subt{
+    display: flex;
+    justify-content: center;
+    color: #05599e;
+    padding: 1rem 3rem;
+}
+
+.color-fucsia{
+    color: #b1106e;
+    background-color: #4b82af;
+}
+
+footer{
+    background-color: black;
+    color: #4bd8d1e8;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 1024px)
+{ 
+    .portada{
+        background-image: url(../images/fotobanner.jpg);
+        background-size: cover;
+        background-repeat: round;
+        width: 100vw;
+        height: 50vh;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .nosotros{
+        display:grid;
+        grid-template-areas: 
+        " subtitulo subtitulo subtitulo"
+        " textouno foto textodos";
+        justify-items: center;
+    }
+    .nosotros-subt{
+        grid-area: subtitulo;
+        align-self: center;
+    }
+    .nosotros-texto{
+        grid-area: textouno;
+    }
+    .nosotros-imagen{
+        grid-area: foto;
+        align-self: center;
+    }
+    .nosotros-textobis{
+        grid-area: textodos;
+    }
+    
+    /*.carrouselimg{
+        display: grid;
+    }*/
+    
+    .academico{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "foto texto";
+    }
+    
+    .academico-subt{
+       grid-area: subtitulo;
+    }
+    
+    .academico-foto{
+        grid-area: foto;
+
+    }
+    
+    .academico-texto{
+        grid-area: texto;
+    }
+    
+    .info{
+        display: grid;
+        grid-template-areas: 
+        "atencion contacto ubicacion"
+        "textoUno textoDos textoTres"
+        "textoUno textoDos mapa";
+    }
+    
+    .info-atencion{
+        grid-area: atencion;
+    }
+    
+    .info-texto{
+        grid-area: textoUno;
+    }
+    
+    .info-contacto{
+        grid-area: contacto;
+    }
+    
+    .info-contacto-texto{
+        grid-area: textoDos;
+    }
+    
+    .info-ubicacion{
+        grid-area: ubicacion
+    }
+    
+    .info-ubicacion-texto{
+        grid-area: textoTres;
+    }
+
+    .info-ubicacion-mapa{
+        grid-area: mapa;
+    }
+    
+    .footer{
+        background-color: black;
+        color: #37dfd6e8;
+        display: grid;
+        grid-template-areas: 
+        "redes legales"
+        "barra-red legales"
+    }
+    
+    .redes{
+        grid-area: redes;
+    }
+    
+    .barra-red{
+    
+        grid-area: barra-redes;
+    }
+    
+    .legales{
+        display: flex;
+        padding: 20px;
+        border: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: left;
+        grid-area: legales;
+    }
+
+}
