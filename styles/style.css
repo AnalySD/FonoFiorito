@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    transition: all 0.5s linear 0.5s;
 }
 
 li{
@@ -69,6 +70,11 @@ footer{
 
 @media(min-width: 1024px)
 { 
+    .barraNavegacion li:hover{
+        font-size: 2.5rem;
+        color: #b1106e;
+    }
+
     .portada{
         background-image: url(../images/fotobanner.jpg);
         background-size: cover;
@@ -177,8 +183,18 @@ footer{
     }
     
     .barra-red{
-    
         grid-area: barra-redes;
+    }
+
+    .redes i{
+        font-size: 1.5rem;
+        color:#37dfd6e8;
+        transition: all 0.5s linear 0.3s;
+    }
+
+    .redes i:hover{
+        font-size: 2.5rem;
+        color: #b1106e;
     }
     
     .legales{
