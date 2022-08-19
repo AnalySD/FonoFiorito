@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -87,7 +88,7 @@ footer{
         grid-template-columns: repeat(2,1fr);
     }
     
-    .nosotros{
+    /*.nosotros{
         display:grid;
         grid-template-areas: 
         " subtitulo subtitulo subtitulo"
@@ -111,7 +112,7 @@ footer{
     
     /*.carrouselimg{
         display: grid;
-    }*/
+    }
     
     .academico{
         display: grid;
@@ -205,6 +206,6 @@ footer{
         margin-right: 100px;
         text-align: left;
         grid-area: legales;
-    }
+    }*/
 
 }
