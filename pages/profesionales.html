@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <title> Profesionales</title>
 </head>
 <body>
-    <header> 
-        <h1> FONO FIORITO - PROFESIONALES! </h1>
-           <nav> 
-                <ul class="barraNavegacion">
-                    <li> <a href="../index.html"> Inicio </a> </li>
-                    <li> <a href="./profesionales.html"> Profesionales </a> </li>
-                    <li> <a href="./especialidades.html"> Especialidades </a> </li>
-                    <li> <a href="./residencia.html"> Residencia </a> </li>
-                    <li> <a href="./turnos.html"> Turnos </a> </li>
-                    <li> <a href="./contacto.html"> Contacto </a> </li>
-               </ul>
-           </nav>
-    </header>
+    <div class="container-fluid">
+        <header class="header">
+            <div class="row">
+                <div class="col align-self-center">
+                    <h1> FONO FIORITO - PROFESIONALES </h1>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <ul class="barraNavegacion">
+                        <div class="col">
+                            <li> <a href="../index.html"> Inicio </a> </li>
+                        </div>
+                        <div class="col">
+                            <li>  <a href="../pages/profesionales.html"> Profesionales </a> </li>
+                        </div>
+                        <div class="col">
+                            <li>  <a href="../pages/especialidades.html"> Areas </a> </li>
+                        </div>
+                        <div class="col">
+                            <li>  <a href="../pages/residencia.html"> Residencia </a> </li>
+                        </div>
+                        <div class="col">
+                            <li>  <a href="../pages/turnos.html"> Turno </a> </li>
+                        </div>
+                        <div class="col">
+                            <li>  <a href="../pages/contacto.html"> Contacto </a> </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
 <hr>
     <main> 
         <section>
-            <h2> Quienes somos </h2>
+            <h2 class="main__subt"> Sobre nosotros </h2>
+            <p> Somos un grupo de licenciadas en fonoaudiologia. Las areas por nosotras abordadas son de vital importancia para el desarrollo del individuo y la conservacion de sus capacidades, mejorando asi su calidad de vida y su potencialidad para la comunicacion con el otro</p>
+            
             <p> Conoce al personal que forma parte de nuestro servicio de fonoaudiologia </p>
 
             <table border="1">
@@ -35,38 +58,51 @@
                 </tr>
     
                 <tr>
+                    <td> Adriana </td>
+                    <td> Medicina Fisica y Rehabilitacion </td>
+                    <td> Jefe de servicio </td>
+                </tr>
+
+                <tr>
                     <td> Beatriz </td>
-                    <td> Fonoaudiologa </td>
-                    <td> Jefe a cargo personal </td>
+                    <td> Lic.en Fonoaudiologia </td>
+                    <td> Jefe de Unidad de Fonoaudilogia </td>
                 </tr>
         
                 <tr>
                     <td> Cintia </td>
-                    <td> Fonoaudiologa </td>
+                    <td> Lic.en Fonoaudiologia </td>
+                    <td> Personal de planta </td>
+                </tr>
+
+                <tr>
+                    <td> Valeria </td>
+                    <td> Lic.en Fonoaudiologia </td>
                     <td> Personal de planta </td>
                 </tr>
     
                 <tr>
                     <td> Yamila </td>
-                    <td> Fonoaudiologa </td>
+                    <td> Lic.en Fonoaudiologia </td>
                     <td> Personal de planta </td>
                 </tr>
     
                 <tr>
                     <td> Luciana </td>
-                    <td> Fonoaudiologa - Docente </td>
+                    <td> Lic.en Fonoaudiologia - Docente </td>
+                    <td> Docente</td>
                     <td> Jefe de Residentes </td>
                 </tr>
         
                 <tr>
                     <td> Lourdes </td>
-                    <td> Fonoaudiologa </td>
+                    <td> Lic.en Fonoaudiologia </td>
                     <td> Residente 1 año </td>
                 </tr>
     
                 <tr>
                     <td> Claudia </td>
-                    <td> Fonoaudiologa </td>
+                    <td> Lic.en Fonoaudiologia </td>
                     <td> Residente 1 año </td>
                 </tr>
     
@@ -77,19 +113,31 @@
      
     </main>
 <hr>
-    <footer> 
-        <div>
-            <h2> Sumate a la comunidad: </h2>
-            <ul> 
-                <li> Instagram </li>
-                <li> Facebook </li>
-            </ul>
-            <h2> Direccion </h2>
-                <p> Italia 371, Avellaneda, Buenos Aires. <p>
-                <p> Politica de privacidad </p>
-                <p> Terminos legales </p>
-                <p> Copyright 2022 </p>
+<footer class="container-fluid">
+    <div class="row redes">
+        <div class="col-4">
+            <div>
+                <h3> Sumate a la comunidad: </h3>
+            </div>
+            <div>
+                <i class="bi bi-instagram"> </i>
+                <i class="bi bi-facebook"> </i>
+            </div>
         </div>
-    </footer>
+        <div class="col-6 offset-2 text-end">
+            <div>
+                <h3> Direccion </h3>
+                <p> Italia 371, Avellaneda, Buenos Aires.<p>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <p> 2022-FonoFiorito-Todos los derechos reservados</p>
+        </div>
+        <div class="col-12 text-center">
+            <p> Diseño y desarrollo A.S.Dastek</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

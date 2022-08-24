@@ -59,7 +59,6 @@ main{
     margin-right: 6rem;
 }
 
-
 footer{
     background-color: black;
     color: #4bd8d1e8;
@@ -93,25 +92,26 @@ footer{
     width: 100vw;
     height: 50vh; 
     }
-
     .barraNavegacion li:hover{
     font-size: 2.5rem;
     color: #b1106e;
     }
-
     .redes i:hover{
     font-size: 2.5rem;
     color: #b1106e;
     }
-
-    .legales{
+    /*.legales{
         display: flex;
         padding: 20px;
         border: 20px;
         margin-left: 100px;
         margin-right: 100px;
         text-align: left;
-        grid-area: legales;
-    }
-    
+    } */
+}
+
+.area_voz {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
 }
