@@ -1,0 +1,20 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all 0.5s linear 0.5s;
+    li{
+        list-style-type: none;
+        margin: 1rem 0rem 1rem;
+    }
+}.portada{
+    background-image: url(../images/fotobanner.jpg);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    height: 20vh;
+}
