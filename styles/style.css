@@ -118,5 +118,28 @@ footer {
     color: #b1106e;
   }
 }
+@media (max-width: 767px) {
+  .col-6 {
+    width: 80%;
+  }
+}
+
+.portada {
+  background-image: url(../images/fotobanner.jpg);
+  background-size: cover;
+  background-repeat: round;
+  width: 100%;
+  height: 20vh;
+}
+@media (min-width: 1024px) {
+  .portada .barraNavegacion li:hover {
+    font-size: 2.5rem;
+    color: #b1106e;
+  }
+  .portada .redes i:hover {
+    font-size: 2.5rem;
+    color: #b1106e;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
