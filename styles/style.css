@@ -3,19 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-* {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
   background: linear-gradient(#c5f9d7, #f7d486, #f27a7d, #5e5c6c);
-}
-
-.header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  color: black;
 }
 
 .barraNavegacion {
@@ -27,14 +25,6 @@ body {
 .barraNavegacion li {
   list-style-type: none;
   margin: 1rem 0rem 1rem;
-}
-
-.portada {
-  background-image: url(../images/fotobanner.jpg);
-  background-size: cover;
-  background-repeat: round;
-  width: 100%;
-  height: 20vh;
 }
 
 main {
@@ -101,7 +91,61 @@ footer {
   justify-content: space-evenly;
 }
 
+@media (max-width: 480px) {
+  .barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .barraNavegacion li {
+    list-style-type: none;
+    margin: 1rem 0rem 1rem;
+  }
+  .portada {
+    background-image: url(../images/fotobanner.jpg);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    height: 20vh;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .barraNavegacion li:hover {
+    font-size: 1rem;
+  }
+  .barraNavegacion a:hover {
+    color: #b1106e;
+  }
+  .portada {
+    background-image: url(../images/fotobanner.jpg);
+    background-size: cover;
+    background-repeat: round;
+    width: 100vw;
+    height: 40vh;
+  }
+  .redes i:hover {
+    font-size: 1.5rem;
+    color: #b1106e;
+  }
+}
 @media (min-width: 1024px) {
+  .barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .barraNavegacion li:hover {
+    font-size: 1.5rem;
+    color: #b1106e;
+  }
+  .barraNavegacion a:hover {
+    color: #b1106e;
+  }
   .portada {
     background-image: url(../images/fotobanner.jpg);
     background-size: cover;
@@ -109,35 +153,8 @@ footer {
     width: 100vw;
     height: 50vh;
   }
-  .barraNavegacion li:hover {
-    font-size: 2.5rem;
-    color: #b1106e;
-  }
   .redes i:hover {
-    font-size: 2.5rem;
-    color: #b1106e;
-  }
-}
-@media (max-width: 767px) {
-  .col-6 {
-    width: 80%;
-  }
-}
-
-.portada {
-  background-image: url(../images/fotobanner.jpg);
-  background-size: cover;
-  background-repeat: round;
-  width: 100%;
-  height: 20vh;
-}
-@media (min-width: 1024px) {
-  .portada .barraNavegacion li:hover {
-    font-size: 2.5rem;
-    color: #b1106e;
-  }
-  .portada .redes i:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #b1106e;
   }
 }

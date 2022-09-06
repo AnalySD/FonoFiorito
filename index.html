@@ -8,63 +8,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title> Home - Fono Fiorito </title>
+    <title>Fono Fiorito</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="header">
+        <header class="header container-fluid">
             <div class="row">
-                <div class="col align-self-center">
-                    <h1> FONO FIORITO - BIENVENIDOS! </h1>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <ul class="barraNavegacion">
-                        <div class="col">
-                            <li> <a href="./index.html"> Inicio </a> </li>
-                        </div>
-                        <div class="col">
-                            <li>  <a href="./pages/profesionales.html"> Profesionales </a> </li>
-                        </div>
-                        <div class="col">
-                            <li>  <a href="./pages/especialidades.html"> Areas </a> </li>
-                        </div>
-                        <div class="col">
-                            <li>  <a href="./pages/residencia.html"> Residencia </a> </li>
-                        </div>
-                        <div class="col">
-                            <li>  <a href="./pages/turnos.html"> Turno </a> </li>
-                        </div>
-                        <div class="col">
-                            <li>  <a href="./pages/contacto.html"> Contacto </a> </li>
-                        </div>
-                    </ul>
-                </div>
+                <h1 class="align-self-center col-12"> FONO FIORITO - BIENVENIDOS! </h1>
+                <ul class="barraNavegacion">
+                   <li class="col-auto"> <a href="./inicio.html"> Inicio </a> </li>
+                   <li class="col-auto"> <a href="./pages/profesionales.html"> Profesionales </a> </li>
+                   <li class="col-auto"> <a href="./pages/especialidades.html"> Areas </a> </li>
+                   <li class="col-auto"> <a href="./pages/residencia.html"> Residencia </a> </li>
+                   <li class="col-auto"> <a href="./pages/turnos.html"> Turno </a> </li>
+                   <li class="col-auto"> <a href="./pages/contacto.html"> Contacto </a> </li>
+                </ul>
             </div>
         </header>
-    </div>
 
 <div class="portada"> </div>
 <hr>
     <main>
-        <div class="container-fluid">
-            <section class="row nosotros"> 
-                <div class="nosotros-subt">
+        <div class="container">            
+            <section class="row"> 
                     <h2> Sobre Nosotros </h2>
-                </div>
-
-                <div class="col align-self-center nosotros-texto">
+                <div class="col align-self-center">
                     <p> Contamos con un grupo de varias fonoaudiologas y residentes en formacion continua, trabajando apasionadamente dia tras dia, en conjunto con nuestros queridos pacientes. Nuestra unidad forma parte del serivicio de Medicina Fisica y Rehabilitacion del HIGA Pedro Fiorito. </p>
                 </div>
-                <div class="col imagenes nosotros-imagen">
-                    <img src="./images/fachadahospi.jpg" alt="fachada hospital">
+                <div class="col">
+                    <picture>
+                        <source srcset="./images/fachadahospi-redim.jpg" media="(max-width:502px)">
+                        <img src="./images/fachadahospi.jpg" alt="fachada hospital">
+                    </picture>  
                 </div>
-                    <div class="col align-self-center nosotros-textobis">
+                    <div class="col align-self-center">
                         <p> Nos dedicamos al estudio y tratamiento de los trastornos de la comunicacion humana. Abordamos las areas de voz,habla, lenguaje, audicion y fonoestomatologia tanto en niños como en adultos</p>
                     </div>
             </section>
-          
+        
             <section> 
                 <h2> Eventos y Novedades </h2> 
                 <div class="container">
@@ -97,10 +77,10 @@
                     <h2> Estudia con Nosotros </h2>
                 </div>
                 <div class="row">
-                    <div class="col-6 imagenes" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500"> 
-                        <img src="./images/fotoprueba2.jpg" alt="medico y alumno">
+                    <div class="imagenes col-sm-8 col-md-7 col-xl-5" data-aos= "flip-left" data-aos-easing="linear" data-aos-duration="1500"> 
+                        <img src="./images/fotoprueba2.jpg" class= "img-fluid" alt="medico y alumno">
                     </div>
-                    <div class=" col-3 align-self-center">
+                    <div class="align-self-center col-sm-6 col-md-4 col-xl-5">
                         <p> Hace tu residencia en el servicio de FonoFiorito. Capacitate y perfecciona lo que te apasiona. Si queres saber mas, hace <a href="./pages/residencia.html"> click aca </a> </p>
                     </div>
                     <div class="col offset-2"></div>
@@ -108,7 +88,7 @@
             </section>
 
             <section class="row info">
-                <div class="col">
+                <div class="col offset-1">
                     <div>
                         <h2> Dias y horarios de atencion </h2>
                     </div>
@@ -133,7 +113,7 @@
                     <div>
                         <p> El servicio de fonoaudiologia se encuentra sobre la Calle Italia 371, en el corredor externo del lado izquierdo del Hospital Pedro Fiorito. Desde la estacion Santillan y Kosteki, cabecera del partido de Avellaneda, varias lineas de colectivo que transitan la Avenida Belgrano lo acercaran rapidamente hasta nosotros </p>
                     </div>
-                    <div class="image">
+                    <div class= "img-fluid">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.3744495865609!2d-58.3664856118488!3d-34.667383795755974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334eaa6a21ab%3A0x1ef7886ba9e86d26!2sItalia%20371%2C%20B1870COK%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1658021846756!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>     
                 </div>
@@ -142,7 +122,7 @@
     </main>
     <hr>
     <footer class="container-fluid">
-        <div class="row redes">
+        <div class="redes row">
             <div class="col-4">
                 <div>
                     <h3> Sumate a la comunidad: </h3>
@@ -169,5 +149,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
