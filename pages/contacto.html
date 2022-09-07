@@ -29,31 +29,44 @@
     <main>
         <section>
             <h2> Vias de comunicacion con nosotros </h2>
-            <h3> Informacion de contacto </h3>
-                <p> Para solicitar informacion adicional, consultar por tipos de estudios, preparaciones, horarios o coberturas por favor comuniquese al 4201-5555 interno 154</p>
-                <p> Para realizar consultas sobre nuestro equipamiento o realizar algún comentario, utilice nuestro formulario de contacto </p>
-            <form>
-                <div>
+            <h3 class="subtitulo"> Informacion de contacto </h3>
+                <p class="text-center"> Para solicitar informacion adicional, consultar por tipos de estudios, preparaciones, horarios o coberturas por favor comuniquese al 4201-5555 interno 154</p>
+                <p class="text-center"> Para realizar consultas sobre nuestro equipamiento o realizar algún comentario, utilice nuestro formulario de contacto </p>
+          
+            <form class="row g-5">
+                <div class="col-12">
                     <label for="nombre-usuario"> Nombre y Apellido </label>
                     <input type="text" id="nombre-usuario" name="nombre-usuario">
                 </div>
 
-                <div>
+                <div class="col-12">
                     <label for="telefono-usuario"> Numero telefonico </label>
                     <input type="tel" id="telefono-usuario" name="telefono-usuario">
                 </div>
-        
-                <div>
+
+                <div class="col-12">
                     <label for="email-usuario"> Correo electronico  </label>
                     <input type="email" id="email-usuario" name="email-usuario">
                 </div>
-        
+
                 <div>
-                    <label for="mensaje-usuario"> Escriba su mensaje </label>
-                    <textarea cols="30" rows="5" id="mensaje-usuario" name="mensaje-usuario"></textarea>
+                    <label for="mensaje-usuario"> Deja tu comentario </label>
+                    <textarea id="mensaje-usuario" cols="40" rows="12" placeholder="Insterte su comentario aqui..." name="mensaje-usuario"></textarea>
                 </div>
-                <input type="submit" value="Contactenos!">
+
+                <div>
+                    <input type="submit" value="Contactenos!">
+                </div>
+
             </form>
+
+
+
+
+
+
+
+
         </section>
 
     </main>
