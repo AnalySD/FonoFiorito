@@ -56,11 +56,6 @@ h2 {
   padding: 1rem 3rem;
 }
 
-.color-fucsia {
-  color: #b1106e;
-  background-color: #4b82af;
-}
-
 .info {
   margin-left: 3rem;
   margin-right: 6rem;
@@ -72,15 +67,32 @@ h2 {
 }
 
 .redes i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgba(55, 223, 214, 0.9098039216);
-  transition: all 0.5s linear 0.3s;
+  transition: all 0.2s linear 0.2s;
 }
 
 .area_voz {
   display: flex;
   justify-content: center;
   margin: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contacto {
+  width: 600px;
+  height: 650px;
+  padding: 45px 45px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: none;
 }
 
 footer {
