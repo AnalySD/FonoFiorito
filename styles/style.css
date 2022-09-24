@@ -78,12 +78,23 @@ h2 {
   margin: 2rem;
 }
 
+.portfolio {
+  background-size: cover;
+  background-position: center 90%;
+  transition: all 0.2s ease;
+}
+
+.portfolio_texto {
+  margin-top: 10px;
+}
+
 .contact-form {
   display: flex;
   justify-content: center;
 }
 
 .contacto {
+  display: flex;
   width: 600px;
   height: 650px;
   padding: 45px 45px 20px;
@@ -164,6 +175,9 @@ footer {
     background-repeat: round;
     width: 100vw;
     height: 50vh;
+  }
+  .portfolio:hover {
+    transform: scale(1.1, 1.1);
   }
   .redes i:hover {
     font-size: 2rem;

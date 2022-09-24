@@ -46,15 +46,15 @@ h2{
 }
 
 .portfolio {
-    height: 100%;
-	width: 100%;
-	background-size: cover;
+   	background-size: cover;
 	background-position: center 90%;
-	transition: all 0.5s ease;
+	transition: all 0.2s ease;
 }
-.portfolio:hover{
-    transform: scale(1,1);
+
+.portfolio_texto {
+    margin-top: 10px;
 }
+
 .contact-form{
     display: flex;
     justify-content: center;
