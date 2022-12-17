@@ -5,11 +5,11 @@ const URL = "json/turnos.json"
 const especialidades = []
 
 fetch(URL)
-    .then((response)=> response.json())
-    .then ((data) => especialidades.push (...data))
-    .then (()=> cargarEspecialidades (especialidades))
-    .then (()=> activarClickBotones ())
-    .catch (error => console.error (error))
+    .then((response) => response.json())
+    .then((data) => especialidades.push(...data))
+    .then(() => cargarEspecialidades(especialidades))
+    .then(() => activarClickBotones())
+    .catch(error => console.error(error))
 
 
 function cargarEspecialidades(array) {
@@ -23,9 +23,9 @@ function cargarEspecialidades(array) {
 }
 
 function activarClickBotones() {
-    const botonesAdd= document.querySelectorAll("button.button-add")
+    const botonesAdd = document.querySelectorAll("button.button-add")
     botonesAdd.forEach(btn => {
-        btn.addEventListener("click", ()=> {
+        btn.addEventListener("click", () => {
             let resultado = especialidades.find(esp => esp.codigo === parseInt(btn.id))
             carrito.push(resultado)
             localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -34,24 +34,25 @@ function activarClickBotones() {
 }
 
 function filtrarEspecialidades() {
-        let resultado = especialidades.filter(especialidad => especialidad.nombre.toUpperCase().includes(inputSearch.value.toUpperCase().trim()))
-            if (resultado.length > 0) {
-                cargarEspecialidades(resultado)
-                activarClickBotones ()
-            } else {
-                Swal.fire(
-                    'Oops!',
-                    'No se encontraron coincidencias!',
-                    'error'
-                  )
-            }
-        }            
-            inputSearch.addEventListener("search", ()=> {
-                if (inputSearch.value.trim() !== "") {
-                    filtrarEspecialidades()
-                } else {
-                    cargarEspecialidades(resultado)
-                }
-            })
+    let resultado = especialidades.filter(especialidad => especialidad.nombre.toUpperCase().includes(inputSearch.value.toUpperCase().trim()))
+    if (resultado.length > 0) {
+        cargarEspecialidades(resultado)
+        activarClickBotones()
+    } else {
+        Swal.fire(
+            'Oops!',
+            'No se encontraron coincidencias!',
+            'error'
+        )
+    }
+}
+inputSearch.addEventListener("keypress", (evento) => {
+    if (evento.key !== "Enter") return 
+    if (inputSearch.value.trim() !== "") {
+        filtrarEspecialidades()
+    } else {
+        cargarEspecialidades(resultado)
+    }
+})
 
 
